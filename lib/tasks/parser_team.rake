@@ -44,7 +44,7 @@ namespace :get do
               end
               if @team
                 @team.save
-                puts @team.errors.first if @team.errors.size > 0
+                #p @team.errors.first if @team.errors.size > 0
               end
             end
           end
@@ -102,7 +102,7 @@ namespace :get do
               end
               if @match_result
                 @match_result.save
-                puts @match_result.errors.first if @match_result.errors.size > 0
+                #p @match_result.errors.first if @match_result.errors.size > 0
               end
             end
           end
