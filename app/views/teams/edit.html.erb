@@ -1,0 +1,52 @@
+<h1>Editing team</h1>
+
+<% form_for(@team) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :played %><br />
+    <%= f.text_field :played %>
+  </p>
+  <p>
+    <%= f.label :won %><br />
+    <%= f.text_field :won %>
+  </p>
+  <p>
+    <%= f.label :draw %><br />
+    <%= f.text_field :draw %>
+  </p>
+  <p>
+    <%= f.label :lost %><br />
+    <%= f.text_field :lost %>
+  </p>
+  <p>
+    <%= f.label :goals_home %><br />
+    <%= f.text_field :goals_home %>
+  </p>
+  <p>
+    <%= f.label :goals_away %><br />
+    <%= f.text_field :goals_away %>
+  </p>
+  <p>
+    <%= f.label :points %><br />
+    <%= f.text_field :points %>
+  </p>
+  <p>
+    <%= f.label :goals_home_average %><br />
+    <%= f.text_field :goals_home_average %>
+  </p>
+  <p>
+    <%= f.label :goals_away_average %><br />
+    <%= f.text_field :goals_away_average %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @team %> |
+<%= link_to 'Back', teams_path %>

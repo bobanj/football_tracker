@@ -1,0 +1,21 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  league_id: 1
+  home_team_id: 1
+  away_team_id: 1
+  played_at: 2010-07-10 17:53:48
+  half_time_result: MyString
+  full_time_result: MyString
+  status: 1
+  additional: MyString
+
+two:
+  league_id: 1
+  home_team_id: 1
+  away_team_id: 1
+  played_at: 2010-07-10 17:53:48
+  half_time_result: MyString
+  full_time_result: MyString
+  status: 1
+  additional: MyString

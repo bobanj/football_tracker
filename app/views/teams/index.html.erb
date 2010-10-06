@@ -1,0 +1,38 @@
+<h1>Listing teams</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Played</th>
+    <th>Won</th>
+    <th>Draw</th>
+    <th>Lost</th>
+    <th>Goals home</th>
+    <th>Goals away</th>
+    <th>Points</th>
+    <th>Goals home average</th>
+    <th>Goals away average</th>
+  </tr>
+
+<% @teams.each do |team| %>
+  <tr>
+    <td><%=h team.name %></td>
+    <td><%=h team.played %></td>
+    <td><%=h team.won %></td>
+    <td><%=h team.draw %></td>
+    <td><%=h team.lost %></td>
+    <td><%=h team.goals_home %></td>
+    <td><%=h team.goals_away %></td>
+    <td><%=h team.points %></td>
+    <td><%=h team.goals_home_average %></td>
+    <td><%=h team.goals_away_average %></td>
+    <td><%= link_to 'Show', team %></td>
+    <td><%= link_to 'Edit', edit_team_path(team) %></td>
+    <td><%= link_to 'Destroy', team, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New team', new_team_path %>

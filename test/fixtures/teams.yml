@@ -1,0 +1,25 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  played: 1
+  won: 1
+  draw: 1
+  lost: 1
+  goals_home: 1
+  goals_away: 1
+  points: 1
+  goals_home_average: 1
+  goals_away_average: 1
+
+two:
+  name: MyString
+  played: 1
+  won: 1
+  draw: 1
+  lost: 1
+  goals_home: 1
+  goals_away: 1
+  points: 1
+  goals_home_average: 1
+  goals_away_average: 1

@@ -1,0 +1,43 @@
+<h1>New match_result</h1>
+
+<% form_for(@match_result) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :league_id %><br />
+    <%= f.text_field :league_id %>
+  </p>
+  <p>
+    <%= f.label :home_team_id %><br />
+    <%= f.text_field :home_team_id %>
+  </p>
+  <p>
+    <%= f.label :away_team_id %><br />
+    <%= f.text_field :away_team_id %>
+  </p>
+  <p>
+    <%= f.label :played_at %><br />
+    <%= f.datetime_select :played_at %>
+  </p>
+  <p>
+    <%= f.label :half_time_result %><br />
+    <%= f.text_field :half_time_result %>
+  </p>
+  <p>
+    <%= f.label :full_time_result %><br />
+    <%= f.text_field :full_time_result %>
+  </p>
+  <p>
+    <%= f.label :status %><br />
+    <%= f.text_field :status %>
+  </p>
+  <p>
+    <%= f.label :additional %><br />
+    <%= f.text_field :additional %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', match_results_path %>

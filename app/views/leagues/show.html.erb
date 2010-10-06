@@ -1,0 +1,13 @@
+<p>
+  <b>Name:</b>
+  <%=h @league.name %>
+</p>
+
+<p>
+  <b>Url param:</b>
+  <%=h @league.url_param %>
+</p>
+
+
+<%= link_to 'Edit', edit_league_path(@league) %> |
+<%= link_to 'Back', leagues_path %>

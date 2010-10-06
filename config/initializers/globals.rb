@@ -1,0 +1,1 @@
+PARSE_SITE_URL = 'http://www.footballresults.org'
