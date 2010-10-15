@@ -1,0 +1,35 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-image:url(../images/back_02.jpg);
+	background-repeat:repeat;
+	background-position:top;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+
+td {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+th {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.backgr {
+background-image: url(../images/back_01.jpg);
+background-repeat:repeat-x;
+background-position:top;}
+.results {
+border-color:#000000;
+border-style:solid;
+border-width:1px;}
+select
+{
+width:150px;
+}
+input 
+{
+width:150px
+}

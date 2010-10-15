@@ -5,26 +5,40 @@ require 'open-uri'
 namespace :get do
   desc "Parse Data"
   task :teams => :environment do
+    # Leagues are inserted into database after initalizing the project
+    # using the rake task rake db:seed
+
+    #Going trough each of the leagues
     League.all.each do |league|
+      #Opens the requested url and parses the page
       league_html = Nokogiri::HTML(open(PARSE_SITE_URL + "/league.php?league=#{league.url_param}", :proxy => nil))
       if league_html
+        #Gets the results table and each row is parsed
         league_html.css('table.borrsoft')[2].css('tr').each do |row|
+          # Checks rows number of columns
           if row.css('td').size == 11
+            # Goes trough every column
             row.css('td').each_with_index do |column, index|
               if column[:class] != 'loc1' #not the first row
                 case index
                   when 1
+                    #gets the team url from the anchor href attribute
                     team_url = '/' + column.css('a').first[:href]
+                    # gets team name from the column inner text
                     team_name = column.text.strip
+                    #Checks if that team already exist
                     @team = Team.find_by_name team_name
                     if @team
                       break;
                     else
+                      #if the team doesen't exists a team with the collected data is created
                       @team = Team.new :name => team_name, :url => team_url, :league => league
                     end
                   when 2
+                    # gets number of played matches from the second column
                     @team.played = column.text.to_i
                   when 3
+                    # gets number of won matches from the third column
                     @team.won = column.text.to_i
                   when 4
                     @team.draw = column.text.to_i
@@ -43,6 +57,7 @@ namespace :get do
                 end
               end
               if @team
+                # Saves the team in the database
                 @team.save
                 #p @team.errors.first if @team.errors.size > 0
               end
