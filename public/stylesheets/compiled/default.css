@@ -1,0 +1,281 @@
+/* LAYOUT */
+/* line 3, ../../../app/stylesheets/default.sass */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 7, ../../../app/stylesheets/default.sass */
+body {
+  background: #039a01 url(../../images/grass.jpg) repeat fixed;
+  color: #363535;
+  font: normal 11px/18px verdana, arial, helvetica, sans-serif;
+  margin-bottom: 10px;
+}
+
+/* line 13, ../../../app/stylesheets/default.sass */
+#wrapper {
+  background: url(../../images/bg.gif) repeat-y 0% 0%;
+  border-bottom: 1px solid #336600;
+  margin: 0 auto;
+  width: 650px;
+}
+
+/* line 19, ../../../app/stylesheets/default.sass */
+#header {
+  background: url(../../images/bg_header.jpg) no-repeat 0% 0%;
+  width: 650px;
+  height: 133px;
+}
+/* line 23, ../../../app/stylesheets/default.sass */
+#header h1 {
+  color: #eee8aa;
+  font: 35px/35px georgia, times new roman, times, serif;
+  letter-spacing: 2px;
+  padding: 20px 0 0 130px;
+}
+
+/* line 29, ../../../app/stylesheets/default.sass */
+#leftcolumn {
+  display: inline;
+  width: 180px;
+  float: left;
+}
+
+/* line 34, ../../../app/stylesheets/default.sass */
+#maincolumn {
+  background: url(../../images/bg_main.gif) no-repeat top right;
+  float: right;
+  width: 430px;
+  padding: 10px 20px 20px 0;
+  display: inline;
+  position: relative;
+}
+/* line 41, ../../../app/stylesheets/default.sass */
+#maincolumn p {
+  padding-bottom: 15px;
+}
+
+/* line 44, ../../../app/stylesheets/default.sass */
+#footer {
+  color: #e5f5e5;
+  background-color: #336600;
+  padding: 10px 0 15px 0;
+  height: 30px;
+  text-align: center;
+}
+/* line 50, ../../../app/stylesheets/default.sass */
+#footer a {
+  background-image: none;
+  padding: 0;
+  color: #e5f5e5;
+  text-decoration: underline;
+  outline: none;
+}
+/* line 56, ../../../app/stylesheets/default.sass */
+#footer a:hover {
+  color: #eee8aa;
+  text-decoration: underline;
+}
+
+/* line 60, ../../../app/stylesheets/default.sass */
+.clear {
+  clear: both;
+  background: none;
+}
+
+/* NAVIGATION TOP */
+/* line 66, ../../../app/stylesheets/default.sass */
+#navtop ul {
+  padding: 0;
+  margin: 0 4px 0 0;
+  background: #336600 url(../../images/bg_navigation.gif) no-repeat;
+  float: right;
+  width: 645px;
+}
+
+/* line 73, ../../../app/stylesheets/default.sass */
+* html #navtop ul {
+  width: 100%;
+}
+
+/* line 76, ../../../app/stylesheets/default.sass */
+#navtop ul li {
+  display: inline;
+}
+/* line 78, ../../../app/stylesheets/default.sass */
+#navtop ul li a {
+  background-image: none;
+  padding: 3px 10px 3px 20px;
+  color: #e5f5e5;
+  text-decoration: none;
+  float: right;
+  text-transform: uppercase;
+  outline: none;
+}
+/* line 86, ../../../app/stylesheets/default.sass */
+#navtop ul li a:hover {
+  color: #eee8aa;
+  text-decoration: underline;
+}
+
+/* line 90, ../../../app/stylesheets/default.sass */
+#navigation {
+  width: 175px;
+}
+/* line 92, ../../../app/stylesheets/default.sass */
+#navigation ul {
+  margin-left: 4px;
+  padding-left: 0;
+  list-style-type: none;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+}
+/* line 98, ../../../app/stylesheets/default.sass */
+#navigation a {
+  background-image: none;
+  display: block;
+  padding: 5px 3px 5px 7px;
+  width: 165px;
+  background-color: green;
+  border-bottom: 1px solid #e5f5e5;
+  outline: none;
+}
+/* line 106, ../../../app/stylesheets/default.sass */
+#navigation a:link, #navigation a:active, #navigation a:visited {
+  color: #e5f5e5;
+  text-decoration: none;
+}
+/* line 109, ../../../app/stylesheets/default.sass */
+#navigation a:hover {
+  background-color: #039a01;
+  border-bottom: 1px solid #336600;
+  color: #eee8aa;
+}
+
+/* NAVIGATION LEFT */
+/* SITE STYLES */
+/* line 119, ../../../app/stylesheets/default.sass */
+#maincolumn h1 {
+  background: url(../../images/trophy.png) no-repeat 0% 5px;
+  font: 20px/42px georgia, times new roman, times, serif;
+  letter-spacing: 2px;
+  padding-left: 36px;
+}
+/* line 124, ../../../app/stylesheets/default.sass */
+#maincolumn h2, #maincolumn h3 {
+  background-color: #e5f5e5;
+  font: bold 16px/22px georgia, times new roman, times, serif;
+  letter-spacing: 2px;
+  border-top: 1px solid #363636;
+  border-bottom: 1px solid #363636;
+  margin-bottom: 10px;
+  padding-left: 5px;
+}
+/* line 132, ../../../app/stylesheets/default.sass */
+#maincolumn h4, #maincolumn h5, #maincolumn h6 {
+  font: bold 11px/18px verdana, arial, helvetica, sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* line 137, ../../../app/stylesheets/default.sass */
+a {
+  background: url(../../images/link.gif) no-repeat 0% 2px;
+  color: #3cb371;
+  font-weight: bold;
+  outline: none;
+  padding-left: 15px;
+  text-decoration: underline;
+}
+/* line 144, ../../../app/stylesheets/default.sass */
+a:link, a:active, a:visited {
+  background: url(../../images/link.gif) no-repeat 0% 2px;
+  color: #3cb371;
+  font-weight: bold;
+  outline: none;
+  padding-left: 15px;
+  text-decoration: underline;
+}
+/* line 151, ../../../app/stylesheets/default.sass */
+a:hover {
+  color: #ff8c00;
+  text-decoration: none;
+}
+
+/* line 156, ../../../app/stylesheets/default.sass */
+div.news {
+  background: url(../../images/h2_line.gif) repeat-x 0% 15px;
+  text-align: center;
+}
+/* line 159, ../../../app/stylesheets/default.sass */
+div.news p {
+  text-align: left;
+}
+/* line 161, ../../../app/stylesheets/default.sass */
+div.news a {
+  background: url(../../images/page.gif) no-repeat 0% 0%;
+  color: #363636;
+  padding: 0 0 5px 21px;
+}
+/* line 165, ../../../app/stylesheets/default.sass */
+div.news a:link, div.news a:active, div.news a:visited {
+  background: url(../../images/page.gif) no-repeat 0% 0%;
+  color: #363636;
+  padding: 0 0 5px 21px;
+}
+/* line 169, ../../../app/stylesheets/default.sass */
+div.news a:hover {
+  color: #999999;
+  text-decoration: none;
+}
+/* line 172, ../../../app/stylesheets/default.sass */
+div.news strong {
+  color: #336600;
+  font: normal 16px/32px georgia, times new roman, times, serif;
+  letter-spacing: 2px;
+  background-color: white;
+  padding: 0 5px 0 5px;
+}
+/* line 178, ../../../app/stylesheets/default.sass */
+div.tableleft {
+  font-size: 10px;
+  margin: 10px 0 10px 10px;
+}
+/* line 181, ../../../app/stylesheets/default.sass */
+div.tableleft table {
+  border: 1px solid #336600;
+  margin-top: 5px;
+}
+/* line 184, ../../../app/stylesheets/default.sass */
+div.tableleft td {
+  padding: 0 0 0 2px;
+}
+/* line 186, ../../../app/stylesheets/default.sass */
+div.tableleft .yourteam {
+  background-color: #039a01;
+  color: white;
+}
+/* line 189, ../../../app/stylesheets/default.sass */
+div.tableleft .otherteam {
+  background-color: white;
+}
+
+/* line 193, ../../../app/stylesheets/default.sass */
+#leftcolumn h3 {
+  font: bold 11px/18px verdana, arial, helvetica, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 10px 0 10px 0;
+}
+/* line 198, ../../../app/stylesheets/default.sass */
+#leftcolumn h4 {
+  background: url(../../images/ball.gif) no-repeat left 6px;
+  margin: 10px 5px 0 0;
+  font: bold 11px/18px verdana, arial, helvetica, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: right;
+  border-top: 1px solid #336600;
+  padding-top: 5px;
+}

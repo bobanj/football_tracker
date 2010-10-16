@@ -5,7 +5,7 @@ class MatchResultsController < ApplicationController
     @match_results = MatchResult.all
 
     respond_to do |format|
-      format.html # index.html.erb
+      format.html # index.html.haml
       format.xml  { render :xml => @match_results }
     end
   end

@@ -5,7 +5,7 @@ class LeaguesController < ApplicationController
     @leagues = League.all
 
     respond_to do |format|
-      format.html # index.html.erb
+      format.html # index.html.haml
       format.xml  { render :xml => @leagues }
     end
   end
