@@ -1,0 +1,5 @@
+.matches
+  %h1
+    ="Team #{@team.name.humanize}"
+  = render :partial => 'matches', :locals => {:matches => @team.home_matches, :title => 'Home Matches'}
+  = render :partial => 'matches', :locals => {:matches => @team.away_matches, :title => 'Away Matches'}

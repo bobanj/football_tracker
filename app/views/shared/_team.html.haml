@@ -1,0 +1,22 @@
+%tr.otherteam
+  %td= team_counter + 1
+  %td{:nowrap => true}
+    = link_to team.name.humanize, team
+  %td
+    .stats= team.played
+  %td
+    .stats= team.won
+  %td
+    .stats= team.lost
+  %td
+    .stats= team.draw
+  %td
+    .stats= team.goals_for
+  %td
+    .stats= team.goals_against
+  %td
+    .stats= team.goals_for_average
+  %td
+    .stats= team.goals_against_average
+  %td
+    .stats= team.points

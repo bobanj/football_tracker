@@ -135,18 +135,18 @@ body
     text-transform: uppercase
 
 a
-  background: url(../../images/link.gif) no-repeat 0% 2px
+  //background: url(../../images/link.gif) no-repeat 0% 2px
   color: #3cb371
   font-weight: bold
   outline: none
-  padding-left: 15px
+  //padding-left: 15px
   text-decoration: underline
   &:link, &:active, &:visited
-    background: url(../../images/link.gif) no-repeat 0% 2px
+    //background: url(../../images/link.gif) no-repeat 0% 2px
     color: #3cb371
     font-weight: bold
     outline: none
-    padding-left: 15px
+    //padding-left: 15px
     text-decoration: underline
   &:hover
     color: #ff8c00
@@ -175,20 +175,26 @@ div
       letter-spacing: 2px
       background-color: #fff
       padding: 0 5px 0 5px
-  &.tableleft
+  &.maintable
     font-size: 10px
     margin: 10px 0 10px 10px
     table
       border: 1px solid #336600
       margin-top: 5px
+      tr
+        &:hover
+          background-color: #039A01
     td
-      padding: 0 0 0 2px
+      padding: 0 0 0 10px
     .yourteam
       background-color: #039A01
       color: #fff
     .otherteam
       background-color: #fff
-
+      td
+        padding-left: 10px
+      .stats
+        text-align: center
 #leftcolumn
   h3
     font: bold 11px / 18px verdana, arial, helvetica, sans-serif
@@ -204,3 +210,23 @@ div
     text-align: right
     border-top: 1px solid #336600
     padding-top: 5px
+.matches
+  font-size: 10px
+  margin: 10px 0 10px 10px
+  table
+    border: 1px solid #336600
+    margin-top: 5px
+    tr
+      &:hover
+        background-color: #039A01
+  .name
+    text-align: center
+    padding-left: 2px
+  .match
+    background-color: #fff
+    td
+      padding-left: 4px
+    .name
+      text-align: center
+      padding-left: 8px
+      padding-right: 2px

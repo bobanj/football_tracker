@@ -1,0 +1,14 @@
+%tr.match
+  %td= match_counter + 1
+  %td
+    %div.name=link_to match.home_team.name.humanize, match.home_team
+  %td
+    %div.name= link_to match.away_team.name.humanize, match.away_team
+  %td
+    %div.name= match.half_time_result
+  %td
+    %div.name= match.full_time_result
+  %td
+    %div.name= match.additional
+  %td
+    %div.name= match.played_at.strftime('%d.%m.%Y')

@@ -1,0 +1,13 @@
+- form_tag search_path, :method => :get do 
+  = text_field_tag :name, params[:name]
+  = select_tag :type, options_for_select(SEARCH_TYPES, params[:type])
+  = submit_tag 'Search'
+=will_paginate @result
+- if params[:type] == 'Result'
+  .matches
+    =render :partial => 'teams/matches', :locals => {:matches => @result, :title => 'Search Results'}
+- if params[:type] == 'Team'
+  =render :partial => 'shared/teams', :locals => {:teams => @result}
+- if params[:type] == 'League'
+  =render :partial => 'shared/leagues', :locals => {:leagues => @result}
+=will_paginate @result

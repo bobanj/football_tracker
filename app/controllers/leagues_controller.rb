@@ -14,7 +14,7 @@ class LeaguesController < ApplicationController
   # GET /leagues/1.xml
   def show
     @league = League.find(params[:id])
-
+    @teams = @league.teams.paginate(:page => params[:page])
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @league }

@@ -181,20 +181,16 @@ body {
 
 /* line 137, ../../../app/stylesheets/default.sass */
 a {
-  background: url(../../images/link.gif) no-repeat 0% 2px;
   color: #3cb371;
   font-weight: bold;
   outline: none;
-  padding-left: 15px;
   text-decoration: underline;
 }
 /* line 144, ../../../app/stylesheets/default.sass */
 a:link, a:active, a:visited {
-  background: url(../../images/link.gif) no-repeat 0% 2px;
   color: #3cb371;
   font-weight: bold;
   outline: none;
-  padding-left: 15px;
   text-decoration: underline;
 }
 /* line 151, ../../../app/stylesheets/default.sass */
@@ -238,37 +234,49 @@ div.news strong {
   padding: 0 5px 0 5px;
 }
 /* line 178, ../../../app/stylesheets/default.sass */
-div.tableleft {
+div.maintable {
   font-size: 10px;
   margin: 10px 0 10px 10px;
 }
 /* line 181, ../../../app/stylesheets/default.sass */
-div.tableleft table {
+div.maintable table {
   border: 1px solid #336600;
   margin-top: 5px;
 }
-/* line 184, ../../../app/stylesheets/default.sass */
-div.tableleft td {
-  padding: 0 0 0 2px;
+/* line 185, ../../../app/stylesheets/default.sass */
+div.maintable table tr:hover {
+  background-color: #039a01;
 }
-/* line 186, ../../../app/stylesheets/default.sass */
-div.tableleft .yourteam {
+/* line 187, ../../../app/stylesheets/default.sass */
+div.maintable td {
+  padding: 0 0 0 10px;
+}
+/* line 189, ../../../app/stylesheets/default.sass */
+div.maintable .yourteam {
   background-color: #039a01;
   color: white;
 }
-/* line 189, ../../../app/stylesheets/default.sass */
-div.tableleft .otherteam {
+/* line 192, ../../../app/stylesheets/default.sass */
+div.maintable .otherteam {
   background-color: white;
 }
+/* line 194, ../../../app/stylesheets/default.sass */
+div.maintable .otherteam td {
+  padding-left: 10px;
+}
+/* line 196, ../../../app/stylesheets/default.sass */
+div.maintable .otherteam .stats {
+  text-align: center;
+}
 
-/* line 193, ../../../app/stylesheets/default.sass */
+/* line 199, ../../../app/stylesheets/default.sass */
 #leftcolumn h3 {
   font: bold 11px/18px verdana, arial, helvetica, sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
   margin: 10px 0 10px 0;
 }
-/* line 198, ../../../app/stylesheets/default.sass */
+/* line 204, ../../../app/stylesheets/default.sass */
 #leftcolumn h4 {
   background: url(../../images/ball.gif) no-repeat left 6px;
   margin: 10px 5px 0 0;
@@ -278,4 +286,38 @@ div.tableleft .otherteam {
   text-align: right;
   border-top: 1px solid #336600;
   padding-top: 5px;
+}
+
+/* line 213, ../../../app/stylesheets/default.sass */
+.matches {
+  font-size: 10px;
+  margin: 10px 0 10px 10px;
+}
+/* line 216, ../../../app/stylesheets/default.sass */
+.matches table {
+  border: 1px solid #336600;
+  margin-top: 5px;
+}
+/* line 220, ../../../app/stylesheets/default.sass */
+.matches table tr:hover {
+  background-color: #039a01;
+}
+/* line 222, ../../../app/stylesheets/default.sass */
+.matches .name {
+  text-align: center;
+  padding-left: 2px;
+}
+/* line 225, ../../../app/stylesheets/default.sass */
+.matches .match {
+  background-color: white;
+}
+/* line 227, ../../../app/stylesheets/default.sass */
+.matches .match td {
+  padding-left: 4px;
+}
+/* line 229, ../../../app/stylesheets/default.sass */
+.matches .match .name {
+  text-align: center;
+  padding-left: 8px;
+  padding-right: 2px;
 }

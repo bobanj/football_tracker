@@ -1,0 +1,40 @@
+.maintable
+  %h1
+    ="League #{@league.name.humanize}"
+  - if @league.teams.count > 0
+    %h4 Teams
+    %table{:border => "0", :cellpadding => "0", :cellspacing => "0", :width => "164"}
+      %tr{:style => "background: #336600; color: #fff;"}
+        %td{:width => "18"}
+          %strong #
+        %td
+          %strong Team
+        %td
+          %div{:align => "center", :title => 'Played'}
+            %strong Played
+        %td
+          %div{:align => "center", :title => 'Won'}
+            %strong Won
+        %td
+          %div{:align => "center", :title => 'Loast'}
+            %strong Lost
+        %td
+          %div{:align => "center", :title => 'Draw'}
+            %strong Draw
+        %td
+          %div{:align => "center", :title => 'Goals For'}
+            %strong Gf
+        %td
+          %div{:align => "center", :title => 'Goals Against'}
+            %strong Ga
+        %td
+          %div{:align => "center", :title => 'Average Goals For'}
+            %strong AGf
+        %td
+          %div{:align => "center", :title => 'Average Goals Against'}
+            %strong AGa
+        %td
+          %div{:align => "center", :title => 'Points'}
+            %strong Pts
+        = render :partial => 'shared/team', :collection => @teams
+        =will_paginate @teams

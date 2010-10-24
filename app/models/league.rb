@@ -1,6 +1,6 @@
 class League < ActiveRecord::Base
   # Associations
-  has_many :teams
+  has_many :teams, :order => 'points desc'
   has_many :match_results
 
   # Validations
